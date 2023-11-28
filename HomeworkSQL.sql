@@ -6,7 +6,7 @@ DROP FUNCTION IF EXISTS Convert_sec//
 CREATE FUNCTION Convert_sec (sec INT)
 RETURNS VARCHAR(100) DETERMINISTIC
 BEGIN
-  DECLARE days, hours, minutes, seconds INT;
+  DECLARE days, hours, minutes INT;
   IF sec = 0 THEN
 	RETURN 'Нужно больше секунд';
   END IF;
